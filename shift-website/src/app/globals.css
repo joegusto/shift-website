@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-white font-body text-body antialiased overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  /* ── Primary purple button ── */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 font-heading font-semibold text-[0.95rem] text-white
+           py-3.5 px-7 rounded-lg cursor-pointer
+           transition-all duration-200 hover:-translate-y-px
+           bg-accent hover:bg-accent-light hover:shadow-[0_0_20px_rgba(91,63,214,0.4)];
+  }
+
+  /* ── Ghost / outline button ── */
+  .btn-outline {
+    @apply inline-flex items-center gap-2 bg-transparent font-heading font-semibold text-[0.95rem] text-white
+           py-3.5 px-7 rounded-lg cursor-pointer
+           transition-all duration-200
+           border-[1.5px] border-white/20
+           hover:border-accent-light hover:text-accent-light;
+  }
+
+  /* ── Section label pill ── */
+  .sec-label {
+    @apply inline-block text-[0.72rem] font-bold tracking-[0.12em] uppercase
+           text-accent-soft py-1 px-3.5 rounded-full mb-4
+           bg-accent/[0.08] border border-accent/25;
+  }
+
+  /* ── Logo image ── */
+  .logo-img {
+    @apply h-11 w-auto block;
+    mix-blend-mode: lighten;
+  }
+}

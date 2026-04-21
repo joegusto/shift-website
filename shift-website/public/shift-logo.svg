@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="190 160 620 580">
+  <defs>
+    <style>@import url(https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700);</style>
+  </defs>
+  <polygon points="250,700 450,250 650,700" fill="none" stroke="#5B3FD6" stroke-width="7"/>
+  <polygon points="350,700 550,250 750,700" fill="none" stroke="#5B3FD6" stroke-width="7"/>
+  <polygon points="300,700 500,200 700,700" fill="none" stroke="#7A5CFF" stroke-width="10"/>
+  <text x="500" y="562" fill="white" font-size="86" font-family="Space Grotesk, Arial, sans-serif" font-weight="700" text-anchor="middle" letter-spacing="10">SHIFT</text>
+</svg>
