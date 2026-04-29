@@ -15,6 +15,7 @@ export default function PathCard({
   body,
   items,
   cta,
+  ctaHref,
   highlighted = false,
 }: {
   label: string;
@@ -22,11 +23,12 @@ export default function PathCard({
   body: string;
   items: string[];
   cta: string;
+  ctaHref?: string;
   highlighted?: boolean;
 }) {
   return (
     <div
-      className={`rounded-2xl p-11 max-md:p-8 ${
+      className={`rounded-2xl p-11 max-md:p-8 flex flex-col ${
         highlighted
           ? "bg-accent/[0.06] border border-accent/25"
           : "bg-white/[0.03] border border-white/[0.07]"
@@ -47,9 +49,15 @@ export default function PathCard({
           </li>
         ))}
       </ul>
-      <CalendlyButton className="btn-primary text-sm py-2.5 px-6">
-        {cta} &rarr;
-      </CalendlyButton>
+      {ctaHref ? (
+        <a href={ctaHref} className="btn-outline text-sm py-2.5 px-6 self-start">
+          {cta} &rarr;
+        </a>
+      ) : (
+        <CalendlyButton className="btn-primary text-sm py-2.5 px-6">
+          {cta} &rarr;
+        </CalendlyButton>
+      )}
     </div>
   );
 }

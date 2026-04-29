@@ -126,14 +126,15 @@ export default function Home() {
           <PathCard
             label="Consulting & Fractional Services"
             headline="Recruiting leadership, without the full-time overhead."
-            body="For companies that need more than a search, but aren't ready to hire a full-time recruiter. Flexible engagements built around your actual situation."
+            body="Flexible recruiting support without the full-time overhead. For teams that need more than a search."
             items={[
               "Fractional recruiting leadership on demand",
               "Project-based search with defined scope and timeline",
               "Process and strategy consulting",
               "Monthly or fixed-scope engagement models",
             ]}
-            cta="Book a Call"
+            cta="Learn More"
+            ctaHref="/#consulting"
           />
         </div>
       </section>
@@ -242,13 +243,20 @@ export default function Home() {
             <p className="text-dim max-w-[580px] mx-auto leading-relaxed mb-3">
               For companies that need more than a search but aren&apos;t ready for a full-time recruiter.
             </p>
-            <p className="text-white/45 text-[0.875rem] max-w-[560px] mx-auto leading-relaxed">
+            <p className="text-white/45 text-[0.875rem] max-w-[560px] mx-auto leading-relaxed mb-1">
               Led by a senior technical recruiting partner with 20+ years of experience
               supporting both high-growth teams and established enterprise organizations.
+            </p>
+            <p className="text-white/30 text-[0.8rem] max-w-[540px] mx-auto leading-relaxed">
+              Supporting product and engineering teams across startups, high-growth environments,
+              and enterprise organizations.
             </p>
           </div>
 
           {/* Service cards */}
+          <p className="text-white/40 text-[0.85rem] font-medium text-center mb-6 tracking-wide uppercase text-[0.72rem]">
+            Three ways we typically support teams
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <div className="bg-white/[0.03] border border-white/[0.07] rounded-[14px] p-8
                             transition-colors duration-200 hover:border-accent/25">
@@ -262,11 +270,13 @@ export default function Home() {
                 as your embedded partner, setting strategy, driving execution, and working
                 directly with hiring managers.
               </p>
-              <p className="text-[0.8rem] text-white/40 leading-relaxed">
-                <span className="text-accent-soft font-semibold">Best for:</span> Scaling teams,
-                interim coverage, or organizations needing consistent recruiting leadership
-                without a full-time hire.
-              </p>
+              <div className="border-t border-white/[0.07] pt-4 mt-2">
+                <p className="text-[0.78rem] text-white/40 leading-relaxed">
+                  <span className="text-accent-soft font-semibold">Best for:</span> Scaling teams,
+                  interim coverage, or organizations needing consistent recruiting leadership
+                  without a full-time hire.
+                </p>
+              </div>
             </div>
 
             <div className="bg-white/[0.03] border border-white/[0.07] rounded-[14px] p-8
@@ -282,11 +292,13 @@ export default function Home() {
                 beginning, middle, and end. A structured, high-commitment alternative to
                 contingency search.
               </p>
-              <p className="text-[0.8rem] text-white/40 leading-relaxed">
-                <span className="text-accent-soft font-semibold">Best for:</span> Critical hires,
-                team buildouts, or time-sensitive hiring spikes where a retained search
-                structure makes sense.
-              </p>
+              <div className="border-t border-white/[0.07] pt-4 mt-2">
+                <p className="text-[0.78rem] text-white/40 leading-relaxed">
+                  <span className="text-accent-soft font-semibold">Best for:</span> Critical hires,
+                  team buildouts, or time-sensitive hiring spikes where a retained search
+                  structure makes sense.
+                </p>
+              </div>
             </div>
 
             <div className="bg-white/[0.03] border border-white/[0.07] rounded-[14px] p-8
@@ -301,10 +313,12 @@ export default function Home() {
                 audits your recruiting workflow, identifies the gaps, and builds a
                 structured approach your team can actually execute.
               </p>
-              <p className="text-[0.8rem] text-white/40 leading-relaxed">
-                <span className="text-accent-soft font-semibold">Best for:</span> Teams that need
-                to improve hiring quality, speed, and consistency across the board.
-              </p>
+              <div className="border-t border-white/[0.07] pt-4 mt-2">
+                <p className="text-[0.78rem] text-white/40 leading-relaxed">
+                  <span className="text-accent-soft font-semibold">Best for:</span> Teams that need
+                  to improve hiring quality, speed, and consistency across the board.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -323,7 +337,7 @@ export default function Home() {
               We&apos;ll talk through your hiring goals, current gaps, and whether there&apos;s a fit.
             </p>
             <div className="flex flex-col items-center gap-2">
-              <CalendlyButton>Book a Call &rarr;</CalendlyButton>
+              <CalendlyButton>Book a 30-Min Call &rarr;</CalendlyButton>
               <span className="text-white/35 text-[0.8rem]">No commitment. Just a conversation.</span>
             </div>
           </div>

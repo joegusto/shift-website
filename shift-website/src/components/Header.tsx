@@ -8,7 +8,7 @@ import CalendlyButton from "./CalendlyButton";
 const navLinks = [
   { href: "/#how-it-works", label: "How It Works" },
   { href: "/#specialties", label: "Specialties" },
-  { href: "/#consulting", label: "Consulting" },
+  { href: "/#consulting", label: "Consulting & Fractional" },
   { href: "/#about", label: "About" },
 ];
 
