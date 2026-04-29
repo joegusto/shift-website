@@ -240,8 +240,7 @@ export default function Home() {
               Recruiting leadership, without the full-time overhead.
             </h2>
             <p className="text-dim max-w-[580px] mx-auto leading-relaxed mb-3">
-              For companies that need more than a search, but aren&apos;t ready to hire a
-              full-time recruiter.
+              For companies that need more than a search but aren&apos;t ready for a full-time recruiter.
             </p>
             <p className="text-white/45 text-[0.875rem] max-w-[560px] mx-auto leading-relaxed">
               Led by a senior technical recruiting partner with 20+ years of experience
@@ -259,9 +258,9 @@ export default function Home() {
               </div>
               <h3 className="text-lg font-bold text-white mb-3">Fractional Recruiting Leadership</h3>
               <p className="text-sm text-dim leading-relaxed mb-4">
-                Bring in experienced recruiting leadership without adding headcount. Embedded
-                support for building process, coaching teams, and driving hiring outcomes
-                consistently over time.
+                Bring in senior recruiting leadership without adding headcount. SHIFT operates
+                as your embedded partner, setting strategy, driving execution, and working
+                directly with hiring managers.
               </p>
               <p className="text-[0.8rem] text-white/40 leading-relaxed">
                 <span className="text-accent-soft font-semibold">Best for:</span> Scaling teams,
@@ -280,7 +279,8 @@ export default function Home() {
               <p className="text-sm text-dim leading-relaxed mb-4">
                 Defined scope. Clear timeline. Measurable outcome. Ideal for critical hires or
                 focused team buildouts where you need a dedicated search effort with a
-                beginning, middle, and end.
+                beginning, middle, and end. A structured, high-commitment alternative to
+                contingency search.
               </p>
               <p className="text-[0.8rem] text-white/40 leading-relaxed">
                 <span className="text-accent-soft font-semibold">Best for:</span> Critical hires,
@@ -298,7 +298,7 @@ export default function Home() {
               <h3 className="text-lg font-bold text-white mb-3">Process &amp; Strategy Consulting</h3>
               <p className="text-sm text-dim leading-relaxed mb-4">
                 When hiring feels inconsistent or slow, the issue is usually the system. SHIFT
-                audits your recruiting workflow, identifies the gaps, and builds a more
+                audits your recruiting workflow, identifies the gaps, and builds a
                 structured approach your team can actually execute.
               </p>
               <p className="text-[0.8rem] text-white/40 leading-relaxed">
@@ -310,14 +310,17 @@ export default function Home() {
 
           {/* Engagement model + CTA */}
           <div className="bg-accent/[0.05] border border-accent/20 rounded-2xl p-10 max-md:p-8 text-center max-w-[780px] mx-auto">
-            <p className="text-white/70 text-[0.95rem] leading-relaxed mb-3">
-              <span className="text-white font-semibold">Flexible by design.</span>{" "}
+            <p className="text-accent-light font-bold text-[1.05rem] mb-2">Flexible by design.</p>
+            <p className="text-white/70 text-[0.95rem] leading-relaxed mb-4">
               Engagements are typically structured as monthly fractional support or
               fixed-scope project work, depending on your needs.
             </p>
             <p className="text-dim text-[0.9rem] leading-relaxed mb-8">
               Not sure which approach fits? Most engagements start with a quick conversation
               to align on goals and gaps.
+            </p>
+            <p className="text-white/55 text-[0.875rem] leading-relaxed mb-6">
+              We&apos;ll talk through your hiring goals, current gaps, and whether there&apos;s a fit.
             </p>
             <div className="flex flex-col items-center gap-2">
               <CalendlyButton>Book a Call &rarr;</CalendlyButton>
