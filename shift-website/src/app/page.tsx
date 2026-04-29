@@ -95,9 +95,9 @@ export default function Home() {
       {/* ── CREDIBILITY BAR ──────────────────────────────────────── */}
       <CredBar />
 
-      {/* ── TWO-PATH CARDS ───────────────────────────────────────── */}
+      {/* ── THREE-PATH CARDS ─────────────────────────────────────── */}
       <section className="bg-bg px-[6%] py-[90px]">
-        <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <PathCard
             label="For Employers"
             headline="Find the people your team actually needs."
@@ -122,6 +122,18 @@ export default function Home() {
               "Access to roles that never hit the job boards",
             ]}
             cta="Let's Connect"
+          />
+          <PathCard
+            label="Consulting & Fractional Services"
+            headline="Recruiting leadership, without the full-time overhead."
+            body="For companies that need more than a search, but aren't ready to hire a full-time recruiter. Flexible engagements built around your actual situation."
+            items={[
+              "Fractional recruiting leadership on demand",
+              "Project-based search with defined scope and timeline",
+              "Process and strategy consulting",
+              "Monthly or fixed-scope engagement models",
+            ]}
+            cta="Book a Call"
           />
         </div>
       </section>
@@ -215,6 +227,102 @@ export default function Home() {
               title="Results that last."
               desc="High retention, longer tenures, and better long-term fit. We measure success by whether the placement is still working 12 months later, not just whether the seat got filled."
             />
+          </div>
+        </div>
+      </section>
+
+      {/* ── CONSULTING & FRACTIONAL SERVICES ────────────────────── */}
+      <section id="consulting" className="bg-bg px-[6%] py-[90px]">
+        <div className="max-w-container mx-auto">
+          <div className="text-center mb-14">
+            <span className="sec-label">Consulting &amp; Fractional Services</span>
+            <h2 className="text-[clamp(1.8rem,3vw,2.4rem)] font-bold text-white tracking-tight mb-3">
+              Recruiting leadership, without the full-time overhead.
+            </h2>
+            <p className="text-dim max-w-[580px] mx-auto leading-relaxed mb-3">
+              For companies that need more than a search, but aren&apos;t ready to hire a
+              full-time recruiter.
+            </p>
+            <p className="text-white/45 text-[0.875rem] max-w-[560px] mx-auto leading-relaxed">
+              Led by a senior technical recruiting partner with 20+ years of experience
+              supporting both high-growth teams and established enterprise organizations.
+            </p>
+          </div>
+
+          {/* Service cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-white/[0.03] border border-white/[0.07] rounded-[14px] p-8
+                            transition-colors duration-200 hover:border-accent/25">
+              <div className="w-8 h-8 rounded-lg bg-accent/15 border border-accent/30
+                              flex items-center justify-center mb-5 text-accent-light text-sm font-bold">
+                01
+              </div>
+              <h3 className="text-lg font-bold text-white mb-3">Fractional Recruiting Leadership</h3>
+              <p className="text-sm text-dim leading-relaxed mb-4">
+                Bring in experienced recruiting leadership without adding headcount. Embedded
+                support for building process, coaching teams, and driving hiring outcomes
+                consistently over time.
+              </p>
+              <p className="text-[0.8rem] text-white/40 leading-relaxed">
+                <span className="text-accent-soft font-semibold">Best for:</span> Scaling teams,
+                interim coverage, or organizations needing consistent recruiting leadership
+                without a full-time hire.
+              </p>
+            </div>
+
+            <div className="bg-white/[0.03] border border-white/[0.07] rounded-[14px] p-8
+                            transition-colors duration-200 hover:border-accent/25">
+              <div className="w-8 h-8 rounded-lg bg-accent/15 border border-accent/30
+                              flex items-center justify-center mb-5 text-accent-light text-sm font-bold">
+                02
+              </div>
+              <h3 className="text-lg font-bold text-white mb-3">Project-Based Search</h3>
+              <p className="text-sm text-dim leading-relaxed mb-4">
+                Defined scope. Clear timeline. Measurable outcome. Ideal for critical hires or
+                focused team buildouts where you need a dedicated search effort with a
+                beginning, middle, and end.
+              </p>
+              <p className="text-[0.8rem] text-white/40 leading-relaxed">
+                <span className="text-accent-soft font-semibold">Best for:</span> Critical hires,
+                team buildouts, or time-sensitive hiring spikes where a retained search
+                structure makes sense.
+              </p>
+            </div>
+
+            <div className="bg-white/[0.03] border border-white/[0.07] rounded-[14px] p-8
+                            transition-colors duration-200 hover:border-accent/25">
+              <div className="w-8 h-8 rounded-lg bg-accent/15 border border-accent/30
+                              flex items-center justify-center mb-5 text-accent-light text-sm font-bold">
+                03
+              </div>
+              <h3 className="text-lg font-bold text-white mb-3">Process &amp; Strategy Consulting</h3>
+              <p className="text-sm text-dim leading-relaxed mb-4">
+                When hiring feels inconsistent or slow, the issue is usually the system. SHIFT
+                audits your recruiting workflow, identifies the gaps, and builds a more
+                structured approach your team can actually execute.
+              </p>
+              <p className="text-[0.8rem] text-white/40 leading-relaxed">
+                <span className="text-accent-soft font-semibold">Best for:</span> Teams that need
+                to improve hiring quality, speed, and consistency across the board.
+              </p>
+            </div>
+          </div>
+
+          {/* Engagement model + CTA */}
+          <div className="bg-accent/[0.05] border border-accent/20 rounded-2xl p-10 max-md:p-8 text-center max-w-[780px] mx-auto">
+            <p className="text-white/70 text-[0.95rem] leading-relaxed mb-3">
+              <span className="text-white font-semibold">Flexible by design.</span>{" "}
+              Engagements are typically structured as monthly fractional support or
+              fixed-scope project work, depending on your needs.
+            </p>
+            <p className="text-dim text-[0.9rem] leading-relaxed mb-8">
+              Not sure which approach fits? Most engagements start with a quick conversation
+              to align on goals and gaps.
+            </p>
+            <div className="flex flex-col items-center gap-2">
+              <CalendlyButton>Book a Call &rarr;</CalendlyButton>
+              <span className="text-white/35 text-[0.8rem]">No commitment. Just a conversation.</span>
+            </div>
           </div>
         </div>
       </section>
